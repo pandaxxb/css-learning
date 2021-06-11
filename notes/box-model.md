@@ -47,3 +47,19 @@
 
 ​	`box-sizing: border-box`称为替代（IE）盒模型。在替代模型中，`width`和`height`属性决定的就是Border box的宽高 ，即可见宽高。而此时content box的宽高就等于`width`和`height`减去`padding`和`border`得到。
 
+​	在大多数页面布局中，通常建议将所有元素的box-sizing属性均设置为border-box，以便在开发时更好的计算元素所占用的空间，避免添加padding或border时产生没有预料到的尺寸失真。
+
+```css
+/* 第一版用来重置页面所有元素盒模型的reset代码 */
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+/* 与第一版相比，可以避免覆盖引入的第三方组件库的默认样式 */
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+```
+
