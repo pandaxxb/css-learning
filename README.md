@@ -10,3 +10,4 @@ Todo List
 - [ ] pseudo-class
 - [ ] pseudo-element
 - [ ] layout
+- [x] Cascade
