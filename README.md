@@ -6,7 +6,7 @@ notes for learning css
 Todo List
 
 - [x] Box Model
-- [ ] Selector
+- [x] Selector
 - [ ] pseudo-class
 - [ ] pseudo-element
 - [ ] layout
